@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Политика конфиденциальности — Chicken War: Осень</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<nav><a href="index.html">Главная</a><a href="privacy.html">Политика конфиденциальности</a><a href="terms.html">Условия использования</a></nav>
+<h1>Политика конфиденциальности</h1>
+<p class="muted">Игра «Chicken War: Осень». Дата вступления в силу: 7 ноября 2026 года.</p>
+
+<p>Эта политика объясняет, какие данные собирает игра «Chicken War: Осень» (далее — «игра»), зачем и как они хранятся. Разработчик — независимый автор игры, связаться: <a href="mailto:nmyaccizbg@gmail.com">nmyaccizbg@gmail.com</a>.</p>
+
+<h2>1. Какие данные мы получаем</h2>
+<ul>
+<li><b>Аккаунт игры:</b> логин и ник. Пароль не хранится и не передаётся: в сеть уходит только его необратимый хеш (PBKDF2 с солью).</li>
+<li><b>Вход через Google:</b> при входе через Google игра получает от Google постоянный идентификатор вашего аккаунта Google и имя из профиля. По идентификатору открывается ваш аккаунт игры, имя используется как ник. Адрес почты игра не сохраняет и не передаёт. Пароль от Google игра не видит — вход происходит на странице Google.</li>
+<li><b>Игровой прогресс:</b> монеты, купленные и полученные вещи, оружие, скины, сохранённые образы, настройки внешности, список друзей.</li>
+<li><b>Друзья и сообщения:</b> коды друзей, заявки в друзья, личные сообщения и статус «в сети».</li>
+<li><b>Сетевая игра:</b> ник, анонимный идентификатор игрока и игровые данные матча (положение, действия, чат в комнате).</li>
+<li><b>Технические данные:</b> при подключении к серверам ваш IP-адрес становится известен этим серверам — так работает интернет-соединение. Игра сама не собирает и не хранит IP-адреса.</li>
+<li><b>Данные на устройстве:</b> настройки, раскладка управления, записанные вами видео и рекорды хранятся только на вашем устройстве.</li>
+</ul>
+<p>Игра не собирает геолокацию, контакты, фото (кроме записанных вами в самой игре видео, которые остаются на устройстве), рекламные идентификаторы и платёжные данные.</p>
+
+<h2>2. Зачем</h2>
+<ul>
+<li>чтобы вы могли войти в аккаунт и получить свои вещи на любом устройстве;</li>
+<li>для сетевой игры, друзей и личных сообщений;</li>
+<li>для поиска и исправления ошибок.</li>
+</ul>
+<p>Мы не продаём данные и не используем их для рекламы.</p>
+
+<h2>3. Где хранятся данные</h2>
+<ul>
+<li><b>Игровой прогресс</b> хранится в зашифрованном виде (AES-256) на публичных MQTT-серверах (например, EMQX, HiveMQ, Mosquitto). Ключ шифрования выводится из ваших логина и пароля (или из идентификатора Google) и на серверы не передаётся, поэтому прочитать прогресс без них нельзя.</li>
+<li><b>Друзья, заявки, статус «в сети» и личные сообщения</b> передаются через те же MQTT-серверы. Они не шифруются отдельно, поэтому не пишите в сообщениях пароли и личные данные.</li>
+<li><b>Сетевая игра</b> идёт через облако Photon (компания Exit Games GmbH, Германия), регион «Европа». Photon обрабатывает соединение по своей <a href="https://www.photonengine.com/privacy">политике конфиденциальности</a>.</li>
+<li><b>Вход через Google</b> обрабатывается Google по <a href="https://policies.google.com/privacy">политике конфиденциальности Google</a>.</li>
+</ul>
+
+<h2>4. Сколько хранятся</h2>
+<p>Прогресс и аккаунт хранятся, пока вы пользуетесь игрой. Сообщения и статус «в сети» хранятся на серверах, пока их не заменят новые. Данные на устройстве удаляются вместе с игрой.</p>
+
+<h2>5. Ваши права и удаление данных</h2>
+<ul>
+<li>Выйти из аккаунта можно в игре: НАСТРОЙКИ → «ВЫЙТИ».</li>
+<li>Чтобы удалить аккаунт и прогресс, напишите на <a href="mailto:nmyaccizbg@gmail.com">nmyaccizbg@gmail.com</a> с указанием логина. Удалим в течение 30 дней.</li>
+<li>Отозвать доступ игры к аккаунту Google можно на странице <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+
+<h2>6. Дети</h2>
+<p>Игра не собирает сознательно данные детей до 13 лет сверх необходимого для работы аккаунта. Если вы родитель и считаете, что ребёнок передал нам данные, напишите нам — мы их удалим.</p>
+
+<h2>7. Изменения</h2>
+<p>Если политика изменится, новая версия появится на этой странице с новой датой.</p>
+
+<h2>8. Контакты</h2>
+<p><a href="mailto:nmyaccizbg@gmail.com">nmyaccizbg@gmail.com</a></p>
+
+<div class="card">
+<h2>Privacy Policy (English summary)</h2>
+<p>Chicken War: Autumn collects only what is needed to run the game: your in-game login and nickname, a salted PBKDF2 hash of your password (the password itself is never sent), your game progress (coins, items, weapons, skins, saved outfits, friends), friend requests, private messages and online status. With Google Sign-In the game receives your Google account ID and profile name (used to open your game account and as your nickname); your email is not stored and your Google password is never seen by the game.</p>
+<p>Progress is stored encrypted (AES-256) on public MQTT brokers; the key is derived from your credentials and never leaves your device. Friends, messages and presence pass through the same brokers unencrypted. Multiplayer runs on Photon Cloud (Exit Games GmbH, EU region). Servers you connect to see your IP address, but the game does not store it. We do not sell data and do not use it for advertising. To delete your account, email <a href="mailto:nmyaccizbg@gmail.com">nmyaccizbg@gmail.com</a>; you can revoke Google access at myaccount.google.com/permissions.</p>
+</div>
+</main>
+</body>
+</html>
